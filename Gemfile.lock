@@ -3,6 +3,7 @@ PATH
   specs:
     admin-utils (1.0.0)
       log4r (~> 1.1.10)
+      rake (~> 0.9.2.2)
 
 GEM
   remote: http://rubygems.org/
@@ -29,5 +30,4 @@ DEPENDENCIES
   admin-utils!
   devver-construct (~> 1.1.0)
   fake_ftp (~> 0.0.9)
-  rake (~> 0.9.2.2)
   rspec (~> 2.10)
