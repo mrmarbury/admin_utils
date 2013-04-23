@@ -6,8 +6,8 @@ PATH
       pg (~> 0.14.0)
 
 GEM
-  remote: https://rubygems.org/
-  remote: https://github.com/
+  remote: http://rubygems.org/
+  remote: http://gems.github.com/
   specs:
     devver-construct (1.1.0)
     diff-lcs (1.2.4)
