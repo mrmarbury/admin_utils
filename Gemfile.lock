@@ -7,6 +7,7 @@ PATH
 
 GEM
   remote: https://rubygems.org/
+  remote: https://github.com/
   specs:
     devver-construct (1.1.0)
     diff-lcs (1.2.4)
