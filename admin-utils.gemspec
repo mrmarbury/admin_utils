@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
   s.require_paths = %w[lib]
   s.required_ruby_version = '~> 1.9'
   s.add_dependency('log4r', '~> 1.1.10')
-  s.add_dependency('pg', '~> 0.14.0')
   s.add_development_dependency('rspec', '~> 2.10')
   s.add_development_dependency('rake', '~> 0.9.2.2')
   s.add_development_dependency('devver-construct', '~> 1.1.0')

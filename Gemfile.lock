@@ -3,7 +3,6 @@ PATH
   specs:
     admin-utils (1.0.0)
       log4r (~> 1.1.10)
-      pg (~> 0.14.0)
 
 GEM
   remote: http://rubygems.org/
@@ -13,7 +12,6 @@ GEM
     diff-lcs (1.2.4)
     fake_ftp (0.0.9)
     log4r (1.1.10)
-    pg (0.14.1)
     rake (0.9.2.2)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
