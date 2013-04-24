@@ -2,9 +2,6 @@ module AuDefaults
 
   LOGGER_BASE = '/var/log'
 
-  DEFAULT_SSH_KEY_PATH = "/home/#{ENV['USER']}/.ssh/oscs_nopass_key"
-  DEFAULT_SSH_PORT = 22
-
   DEFAULT_INIT_SCRIPT_PATH = '/etc/init.d'
 
   # Retrieves the default config path that holds the yml files for the current application.
@@ -19,7 +16,7 @@ module AuDefaults
 
   class << self
 
-    CONFIG_PATH = [ENV['HOME'] + '/.config', '/usr/local/etc/ccsconfig']
+    CONFIG_PATH = [ENV['HOME'] + '/.config', '/etc']
 
     def config_path(path = nil)
       @path_for_the_config = path || (@path_for_the_config || CONFIG_PATH)

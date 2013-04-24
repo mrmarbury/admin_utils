@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    admin-utils (1.0.0)
+    admin-utils (1.0.1)
       log4r (~> 1.1.10)
       rake (~> 10.0.4)
 

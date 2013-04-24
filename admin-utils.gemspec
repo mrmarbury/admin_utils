@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = 'admin-utils'
   s.version     =  Au::Admin::Utils::VERSION
   s.authors     = 'TNG Technology Consulting GmbH'
-  s.email       = 'siemens-sen-ccs@tngtech.com'
-  s.homepage    = 'http://ccs.global-intra.net/confluence'
-  s.summary     = 'The CCS Admin Utils'
-  s.description = 'New Release Installer is working with this gem'
+  s.email       = 'sysadmin@tngtech.com'
+  s.homepage    = 'https://confluence.tngtech.com'
+  s.summary     = 'The Admin Utils'
+  s.description = 'Fixed minor bugs'
   s.files         = Dir.glob('{lib,spec}/**/*') + %w[Rakefile Gemfile Gemfile.lock admin-utils.gemspec]
   s.test_files    = Dir.glob('spec/**/*')
   s.executables   = Dir.glob('*.rb')
