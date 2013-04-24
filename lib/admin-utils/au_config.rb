@@ -9,7 +9,7 @@ module AuConfig
   # Params:
   # * +config_file+ Name of the config file to load
   # * +override_path+ Path to the directory that contains the yml file. If left blank, the default is taken which is configured in
-  #   +CcsDefaults+'s +CONFIG_PATH+ array. Can be either an array of path names or a single path as a string
+  #   +AuDefaults+'s +CONFIG_PATH+ array. Can be either an array of path names or a single path as a string
   #
   # If +override_path+ is an array (e.g. when using the default), the first occurrence of the config file ist loaded.
   def load_config(config_file, override_path = nil)

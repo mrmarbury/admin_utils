@@ -4,7 +4,7 @@ module AuLogger
 
   # Retrieves the current logger instance or initializes a new one.
   #
-  # For parameters to use during initialization, see +CcsLogger.initialize_logger+
+  # For parameters to use during initialization, see +AuLogger.initialize_logger+
   #
   # Default Usage Example:
   #
