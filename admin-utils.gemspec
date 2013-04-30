@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = 'sysadmin@tngtech.com'
   s.homepage    = 'https://confluence.tngtech.com'
   s.summary     = 'The Admin Utils'
-  s.description = 'Fixed minor bugs'
+  s.description = 'Fixed bugs and created new test for fixed bug'
   s.files         = Dir.glob('{lib,spec}/**/*') + %w[Rakefile Gemfile Gemfile.lock admin-utils.gemspec]
   s.test_files    = Dir.glob('spec/**/*')
   s.executables   = Dir.glob('*.rb')

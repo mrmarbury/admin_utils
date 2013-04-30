@@ -65,7 +65,7 @@ module AuLogger
 
       if @mode == 'cronjob'
         raise ArgumentError, 'Path to a log file must be added in cronjob mode!' unless @filename
-        @logger.outputters = Log4r::StdoutOutputter.new('cronjob stdout', level: WARN, formatter: log_pattern)
+        @logger.outputters = Log4r::StdoutOutputter.new('cronjob stdout', level: Log4r::WARN, formatter: log_pattern)
         @logger.add Log4r::FileOutputter.new('log', filename: @filename, formatter: log_pattern)
         @logger.debug 'Logger initialized in cronjob mode'
       elsif @mode == 'daemon'

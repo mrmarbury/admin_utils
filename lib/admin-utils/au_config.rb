@@ -35,6 +35,7 @@ module AuConfig
       cfg_path.each do |path|
         return File.new(File.join(path, config_file)) if File.exists? path + "/" + config_file
       end
+      raise IOError, "FIle #{config_file} not found in path: #{cfg_path}"
     else
       File.new(File.join(cfg_path, config_file))
     end

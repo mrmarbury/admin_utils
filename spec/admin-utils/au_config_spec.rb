@@ -60,4 +60,14 @@ describe "Loading Config Files" do
       config.fiasco_drive.should == 'bagel_and_a_smeer'
     end
   end
+
+  it 'should raise an IOError, if it cannot find a config file' do
+    config_dir_one = 'config/dir/one'
+    config_dir_two = 'config/dir/two'
+    conf_dirs = [config_dir_two, config_dir_one]
+
+    within_construct do |const|
+      lambda { load_config('config.yml', conf_dirs) }.should raise_error(IOError)
+    end
+  end
 end
