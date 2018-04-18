@@ -16,7 +16,7 @@ module AuDefaults
 
   class << self
 
-    CONFIG_PATH = [ENV['HOME'] + '/.config', '/etc']
+    CONFIG_PATH = [ ENV['HOME'] + '/.config', '/etc', '/usr/local/etc', '../config' ]
 
     def config_path(path = nil)
       @path_for_the_config = path || (@path_for_the_config || CONFIG_PATH)

@@ -1,33 +1,40 @@
 PATH
   remote: .
   specs:
-    admin-utils (1.0.3)
-      log4r (~> 1.1.10)
-      rake (~> 10.0.4)
+    admin-utils (1.0.4)
+      log4r
+      rake
 
 GEM
   remote: http://rubygems.org/
-  remote: http://gems.github.com/
   specs:
     devver-construct (1.1.0)
-    diff-lcs (1.2.4)
-    fake_ftp (0.0.9)
+    diff-lcs (1.3)
+    fake_ftp (0.3.0)
     log4r (1.1.10)
-    rake (10.0.4)
-    rspec (2.13.0)
-      rspec-core (~> 2.13.0)
-      rspec-expectations (~> 2.13.0)
-      rspec-mocks (~> 2.13.0)
-    rspec-core (2.13.1)
-    rspec-expectations (2.13.0)
-      diff-lcs (>= 1.1.3, < 2.0)
-    rspec-mocks (2.13.1)
+    rake (12.3.1)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   admin-utils!
-  devver-construct (~> 1.1.0)
-  fake_ftp (~> 0.0.9)
-  rspec (~> 2.10)
+  devver-construct
+  fake_ftp
+  rspec
+
+BUNDLED WITH
+   1.16.1

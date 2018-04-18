@@ -12,7 +12,7 @@ describe "Defaults" do
   end
 
   it "should return the default config path when called for the first time" do
-    AuDefaults.config_path.should == [ENV['HOME'] + '/.config', '/etc']
+    AuDefaults.config_path.should == [ENV['HOME'] + '/.config', '/etc', '/usr/local/etc', '../config']
   end
 
   it "should return the the path, when given as argument" do
@@ -34,7 +34,7 @@ describe "Defaults" do
     AuDefaults.config_path('test').should == 'test'
     AuDefaults.config_path.should == 'test'
     AuDefaults.reset_config_path
-    AuDefaults.config_path.should == [ENV['HOME'] + '/.config', '/etc']
+    AuDefaults.config_path.should == [ENV['HOME'] + '/.config', '/etc', '/usr/local/etc', '../config']
   end
 
 end

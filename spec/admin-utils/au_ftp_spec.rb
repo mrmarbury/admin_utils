@@ -6,7 +6,7 @@ include AuFtp
 describe "Ftp Works" do
 
   it "should open an ftp connection" do
-    ftp = mock('Ftp Server', :null_objects => true)
+    ftp = double('Ftp Server')
     Net::FTP.should_receive(:new).and_return(ftp)
     ftp.should_receive(:connect).with('host', 21)
     ftp.should_receive(:login).with('user', 'passwd', 'acct')
