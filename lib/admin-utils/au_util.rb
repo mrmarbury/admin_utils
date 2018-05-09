@@ -2,7 +2,7 @@ require 'ostruct' unless defined? OpenStruct
 
 module AuUtil
 
-  def AuUtil.hash_to_ostruct(object)
+  def self.hash_to_ostruct(object)
     return case object
     when Hash
       object = object.clone
@@ -28,7 +28,7 @@ module AuUtil
   # Raises:
   # * +File::IOError+ In case there was an error during extraction
   #
-  def extract_gzip(archive_name, extract_dir = (File.dirname(archive_name) or '.'))
+  def self.extract_gzip(archive_name, extract_dir = (File.dirname(archive_name) or '.'))
     raise ArgumentError, "File #{archive_name} does not exist!" unless File.exists? archive_name
     logger.info "Extracting \"#{archive_name}\" to directory \"#{extract_dir}\""
     Open3.popen3 "gunzip -c #{archive_name} > " + extract_dir + "/" + File.basename(archive_name).chomp('.gz') do |stdin, stdout, stderr, t|
