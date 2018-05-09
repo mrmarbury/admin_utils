@@ -1,0 +1,13 @@
+# CHANGELOG
+
+## 1.1.0 - 1.1.1
+
+ * Added check to see if a Unix command is in path
+
+## 1.2.0
+
+ * the path to the log file that was loaded through au_config is attached to the config OStruct with symbol ":_config_file". This way
+   the config file path can be used in a program
+
+ known issues:
+  - the config logger won't log anything, if no logger has been initialized

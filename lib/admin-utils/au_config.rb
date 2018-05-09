@@ -19,7 +19,7 @@ module AuConfig
       @configuration = get_config_file_for_path(@config_path, config_file)
       logger.debug 'Using Config File: ' + @configuration.path
       @yml_data = YAML.load @configuration
-      AuUtil.hash_to_ostruct @yml_data
+      AuUtil.hash_to_ostruct @yml_data.merge(_config_file: @configuration.path)
     rescue => error
       logger.error "Error opening file #{@configuration}. The Message was: #{error.message}\n#{error.backtrace.join("\n")}"
       raise
